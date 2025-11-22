@@ -11,22 +11,26 @@
     src: url("Determination.ttf") format("truetype");
   }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
   body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    font-family: "Determination", monospace;
     background: black;
     color: white;
+    font-family: "Determination", monospace;
     position: relative;
   }
 
-  /* Background */
   #bg {
     position: fixed;
-    top: 0; left: 0;
+    top: 0; 
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -34,7 +38,6 @@
     filter: brightness(0.55);
   }
 
-  /* Center container */
   #center {
     position: absolute;
     top: 50%;
@@ -65,27 +68,26 @@
     outline: none;
     text-align: center;
   }
-
 </style>
 </head>
 
 <body>
 
+<!-- Background -->
 <img id="bg" src="bg1.png">
 
+<!-- Center content -->
 <div id="center">
   <div id="clock">00:00</div>
   <div id="greeting">Good afternoon</div>
 
-  <input
-    id="search"
-    type="text"
+  <input 
+    id="search" 
+    type="text" 
     placeholder="Type to search"
-    onkeypress="if(event.key==='Enter'){ window.location='https://duckduckgo.com/?q='+this.value }"
+    onkeypress="if(event.key==='Enter'){ window.open('https://duckduckgo.com/?q=' + this.value, '_top'); }"
   >
 </div>
-
-
 
 <script>
   function updateClock() {
