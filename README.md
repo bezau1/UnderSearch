@@ -11,6 +11,12 @@ Firefox/Firefox based Browsers
 2. Click the Home panel
 3. Click the menu next to Homepage and new windows and choose to show the default Firefox Home page, custom URLs or a blank page.
 
+Firefox/Firefox Based Browsers (Option 2):
+1. Install the [Custom New Tab Page Extension](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/)
+2. Click the puzzle icon and click manage extensions/Click the menu button and click on Extensions and Themes
+3. Click on Custom New Tab Page and click on preferences
+4. Enter the start page link
+
 # Customize
 1. Fork this repo
 2. Edit the Background, font or code as you wish!
